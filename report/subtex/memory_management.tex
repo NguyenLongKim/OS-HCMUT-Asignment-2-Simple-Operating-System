@@ -1,0 +1,32 @@
+\newpage
+\section{Memory management}
+\subsection{Question \& Answer}
+\textbf{Question}: What is the advantage and disadvantage of segmentation with paging?\\
+\textbf{Answer}:
+\begin{itemize}
+	\item \textbf{Advantage:}
+		\begin{itemize}
+			\item Tiết kiệm bộ nhớ, sử dụng bộ nhớ hiệu quả, khắc phục việc kích thước bảng phân trang quá lớn
+			\item Khắc phục được phân mảnh ngoại
+		\end{itemize}
+	\item \textbf{Disadvantage:}
+		\begin{itemize}
+			\item Chưa khắc phục được hiện tượng phân mảnh nội
+		\end{itemize}
+\end{itemize}
+\subsection{Show status of RAM}
+\textbf{Requirement:} Show the status of RAM after each memory allocation and deallocation function call
+\subsubsection{Test $ m0 $}
+\begin{itemize}
+	\item \textbf{Below is content of file $ m0 $}
+		\lstinputlisting{input/m0}
+	\item \textbf{Status of RAM after each allocation and deallocation function call in $ m0 $}
+		\lstinputlisting{logs/mem0.log}
+\end{itemize}
+\subsubsection{Test $ m1 $}
+\begin{itemize}
+	\item \textbf{Below is content of file $ m1 $}
+		\lstinputlisting{input/m1}
+	\item \textbf{Status of RAM after each allocation and deallocation function call in $ m1 $}
+		\lstinputlisting{logs/mem1.log}
+\end{itemize}

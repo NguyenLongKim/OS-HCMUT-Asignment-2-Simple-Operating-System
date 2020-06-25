@@ -1,0 +1,40 @@
+Time slot   0
+        Loaded a process at input/proc/p0, PID: 1
+Time slot   1
+        CPU 0: Dispatched process  1
+Time slot   2
+        Loaded a process at input/proc/p1, PID: 2
+Time slot   3
+        CPU 1: Dispatched process  2
+Time slot   4
+Time slot   5
+Time slot   6
+Time slot   7
+        CPU 0: Put process  1 to run queue
+        CPU 0: Dispatched process  1
+Time slot   8
+Time slot   9
+        CPU 1: Put process  2 to run queue
+        CPU 1: Dispatched process  2
+Time slot  10
+Time slot  11
+Time slot  12
+        CPU 0: Processed  1 has finished
+        CPU 0 stopped
+Time slot  13
+        CPU 1: Processed  2 has finished
+        CPU 1 stopped
+
+MEMORY CONTENT: 
+000: 00000-003ff - PID: 02 (idx 000, nxt: 001)
+001: 00400-007ff - PID: 02 (idx 001, nxt: 007)
+007: 01c00-01fff - PID: 02 (idx 002, nxt: 008)
+        01de7: 0a
+008: 02000-023ff - PID: 02 (idx 003, nxt: 009)
+009: 02400-027ff - PID: 02 (idx 004, nxt: -01)
+010: 02800-02bff - PID: 01 (idx 000, nxt: -01)
+        02814: 64
+015: 03c00-03fff - PID: 02 (idx 000, nxt: 016)
+016: 04000-043ff - PID: 02 (idx 001, nxt: 017)
+017: 04400-047ff - PID: 02 (idx 002, nxt: 018)
+018: 04800-04bff - PID: 02 (idx 003, nxt: -01)

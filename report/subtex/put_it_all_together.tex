@@ -1,0 +1,16 @@
+\section{Put it all together}
+\subsection{Synchronization}
+Trong file  $ mem.c $, hai hàm $ read\_mem() $ và $ write\_mem() $ truy cập vào $ [\_ram] $ có thể xảy ra bất đồng bộ nên ta cần thêm một $ mutex\_lock $: $ ram\_lock $ để giải quyết, khi đó hai hàm trên được chỉnh lại như sau:
+\begin{itemize}
+	\item \textbf{Hàm read\_mem()}
+		\lstinputlisting{code/read_mem.c}
+	\item \textbf{Hàm write\_mem()}
+		\lstinputlisting{code/write_mem.c}
+\end{itemize}
+\subsection{Result of simulation}
+\begin{itemize}
+	\item \textbf{os\_0 log}
+		\lstinputlisting{logs/os_0.log}
+	\item \textbf{os\_1 log}
+		\lstinputlisting{logs/os_1.log}
+\end{itemize}
